@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="185dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Произвести расчет"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/FormAct"
+        app:layout_constraintStart_toStartOf="@+id/FormAct"
+        app:layout_constraintTop_toBottomOf="@+id/FormAct"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="185dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Вернуться назад"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/result_btn"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/result_btn"
+        app:layout_constraintTop_toBottomOf="@+id/result_btn"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <TextView
+        android:id="@+id/FormAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calResult"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

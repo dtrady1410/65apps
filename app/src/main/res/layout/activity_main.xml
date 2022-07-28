@@ -7,63 +7,121 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/calValue"
+        android:id="@+id/calHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="224dp"
         android:ems="10"
         android:hint="Введите ваш рост"
         android:inputType="number"
         android:minHeight="48dp"
+        android:text="@string/calHeight"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Result_txt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textColor="#1FA324"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/calValue"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/calValue"
-        app:layout_constraintTop_toBottomOf="@+id/calValue" />
 
     <Button
         android:id="@+id/check_btn"
         android:layout_width="258dp"
         android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/purple_500"
         android:text="Сохранить"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/calValue"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="@+id/calValue"
-        app:layout_constraintTop_toBottomOf="@+id/Result_txt" />
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/calAge"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/calAge"
+        app:layout_constraintTop_toBottomOf="@+id/answer_txt"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/calWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Введите ваш вес"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/calWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calHeight" />
+
+    <Button
+        android:id="@+id/check_btn2"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Перейти к расчетам"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/calAge"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/calAge"
+        app:layout_constraintTop_toBottomOf="@+id/answer_txt"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/calAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Введите ваш возраст"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/calAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calWeight" />
+
+    <TextView
+        android:id="@+id/answer_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#1FA324"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/calAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calAge"
+        app:layout_constraintTop_toBottomOf="@+id/calAge" />
 
     <TextView
         android:id="@+id/varHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Ваш рост:"
+        android:text="@string/VarHeight"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/varCal"
+        android:id="@+id/varAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Кол-во калорий :"
+        android:text="@string/VarAge"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/varHeight"
+        app:layout_constraintTop_toBottomOf="@+id/varWeight" />
+
+    <TextView
+        android:id="@+id/varWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/VarWeight"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/varHeight"
         app:layout_constraintTop_toBottomOf="@+id/varHeight" />

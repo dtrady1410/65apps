@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project 1</string>
+    <string name="calResult">Text view</string>
+    <string name="VarHeight">Ваш рост:</string>
+    <string name="VarWeight">Ваш вес:</string>
+    <string name="VarAge">Ваш возраст:</string>
+    <string name="calAge"></string>
+    <string name="calHeight"></string>
+    <string name="calWeight"></string>
+    <string name="AnswerSuc">Успешно</string>
+    <string name="AnswerError">Что-то пошло не так</string>
 </resources>

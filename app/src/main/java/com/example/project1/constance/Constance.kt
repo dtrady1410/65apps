@@ -12,4 +12,5 @@ object Constance {
     const val Height_9 = 160
     const val Height_10 = 155
     const val Height_11 = 150
+
 }
